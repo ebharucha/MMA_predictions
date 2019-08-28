@@ -8,7 +8,7 @@ The Deep Learning models are WIP & not operational
 
 The overall proecss of acquiring data and running the models needs to be automated.  
 
-To run ...
+<b>To run:</b>
 
 ## Step 1
 Create "fight_card.xlsx" in the data directory with the following structure
@@ -17,7 +17,7 @@ or populate the 'df_fight_card' DataFrame
 This contains the bouts for which outcomes would get predicted
 
 ## Step 2
-Execite the 'Load Dependencies' section
+Execute the 'Load Dependencies' section
 
 ## Step 3
 Execute the 'Load Datasets' section
@@ -25,4 +25,4 @@ Execute the 'Load Datasets' section
 ## Step 4
 Execute the 'Predict' section
 
-Ed Bharucha 
+<i>Ed Bharucha</i> 
