@@ -10,14 +10,19 @@ The overall proecss of acquiring data and running the models needs to be automat
 
 To run ...
 
-## Step1
-Cerate "fight_card.xlsx" in the data directory with the following structure
+## Step 1
+Create "fight_card.xlsx" in the data directory with the following structure
 weight_class      fighter1    fighter2
 or populate the 'df_fight_card' DataFrame
 This contains the bouts for which outcomes would get predicted
 
-## Step2
+## Step 2
+Execite the 'Load Dependencies' section
+
+## Step 3
 Execute the 'Load Datasets' section
 
-## Step3
+## Step 4
 Execute the 'Predict' section
+
+Ed Bharucha 
