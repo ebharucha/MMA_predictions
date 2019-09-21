@@ -1,0 +1,23 @@
+# Compiled source #
+
+
+###################
+.gitignore
+README.md
+test.py
+'Web Scraping.ipynb'
+'Cheat Sheet.ipynb'
+Misc.ipynb
+
+# Directories #
+######################
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+./data/*
+./etc/*
+./Include/*
+./Lib/*
+./Scripts/*
+./share/*
+./tcl/*
+
