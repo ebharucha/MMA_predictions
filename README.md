@@ -18,7 +18,7 @@ This contains the bouts for which outcomes would get predicted
 
 ## Step 2
 #### If you want to get the latest fight data. 
-#### Will take a while to run, sinec it gatehrs all data from the start.  Have not tailored this to only update data since last collection.
+#### Will take a while to run, since it gathers rge  entire datset.  Have not tailored  to only update data since last collection.
 Execute src/get_fight_data.py  
 
 ## Step 3
