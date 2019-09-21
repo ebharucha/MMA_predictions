@@ -17,8 +17,8 @@ or populate the 'df_fight_card' DataFrame
 This contains the bouts for which outcomes would get predicted
 
 ## Step 2
-*If you want to get the latest fight data. 
-Will take a while to run, sinec it gatehrs all data from the start.  Have not tailored this to only update data since last collection.
+#### If you want to get the latest fight data. 
+#### Will take a while to run, sinec it gatehrs all data from the start.  Have not tailored this to only update data since last collection.
 Execute src/get_fight_data.py  
 
 ## Step 3
