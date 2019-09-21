@@ -17,12 +17,14 @@ or populate the 'df_fight_card' DataFrame
 This contains the bouts for which outcomes would get predicted
 
 ## Step 2
-Execute the 'Load Dependencies' section
+*If you want to get the latest fight data. 
+Will take a while to run, sinec it gatehrs all data from the start.  Have not tailored this to only update data since last collection.
+Execute src/get_fight_data.py  
 
 ## Step 3
-Execute the 'Load Datasets' section
+Execute src/prep_test_data.py
 
 ## Step 4
-Execute the 'Predict' section
+Execute src/fight_predict.py
 
 <i>Ed Bharucha</i> 
