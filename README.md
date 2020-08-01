@@ -23,7 +23,7 @@ Women's Flyweight	Jennifer Maia	Joanne Calderwood<br>
 Welterweight	Randy Brown	Vicente Luque<br>
 Lightweight	Justin Gaethje	Khabib Nurmagomedov<br>
 <br>
-*This contains the bouts for which outcomes would get predicted*<br>
+This contains the bouts for which outcomes would get predicted<br>
 
 ## Step 3
 Execuete the following commands (without the quotes)<br>
