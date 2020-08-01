@@ -26,7 +26,9 @@ Lightweight	Justin Gaethje	Khabib Nurmagomedov<br>
 *This contains the bouts for which outcomes would get predicted*<br>
 
 ## Step 3
-Execute src/fight_predict.py
+Execuete the following commands (without the quotes)<br>
+"cd src"<br>
+"python src/fight_predict.py"<br>
 
 
 **Note:**<br>
