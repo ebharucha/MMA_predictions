@@ -14,23 +14,23 @@ The overall proecss of acquiring data and running the models needs to be automat
 Download the repo
 
 ## Step 2
-Create "fight_card.xlsx" in the data directory with the following structure
-e.g.
-weight_class	fighter1	fighter2
-Middleweight	Edmen Shahbazyan	Derek Brunson
-Women's Flyweight	Jennifer Maia	Joanne Calderwood
-Welterweight	Randy Brown	Vicente Luque
-Lightweight	Justin Gaethje	Khabib Nurmagomedov
-
-*This contains the bouts for which outcomes would get predicted*
+Create "fight_card.xlsx" in the data directory with the following structure<br>
+e.g.<br>
+weight_class	fighter1	fighter2<br>
+Middleweight	Edmen Shahbazyan	Derek Brunson<br>
+Women's Flyweight	Jennifer Maia	Joanne Calderwood<br>
+Welterweight	Randy Brown	Vicente Luque<br>
+Lightweight	Justin Gaethje	Khabib Nurmagomedov<br>
+<br>
+*This contains the bouts for which outcomes would get predicted*<br>
 
 ## Step 3
 Execute src/fight_predict.py
 
 
 **__Note:__**.
-*If you want to get the latest fight data.*
-*Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.*
-*Execute src/get_fight_data.py*
-
+*If you want to get the latest fight data.*<br>
+*Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.*<br>
+*Execute src/get_fight_data.py*<br>
+<br>
 **@ebharucha**
