@@ -29,8 +29,7 @@ Execute src/fight_predict.py
 
 
 **__Note:__**.<br>
-*If you want to get the latest fight data.*<br>
+*If you want to get the latest fight data, execute ***"src/get_fight_data.py"**<br>
 *Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.*<br>
-*Execute src/get_fight_data.py*<br>
 <br>
 **@ebharucha**
