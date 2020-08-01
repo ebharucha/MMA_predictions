@@ -1,15 +1,18 @@
 ###############################################################################################
 # Author: @ebharucha
-# Date: 21/9/2019
+# Date: 21/9/2019, 1/8/2020
 ###############################################################################################
+import prep_test_data
 import numpy as np
 import pandas as pd
-import pickle
-import warnings
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-import lightgbm as lgb
-
+import xgboost as xgb
+import pickle
+import os
+import warnings
 warnings.filterwarnings("ignore")
+
+prep_test_data.main()
 
 def scale(scaler, data):
   if (scaler == 'standard'):
@@ -20,32 +23,27 @@ def scale(scaler, data):
     return (minmax_scaler.fit_transform(data))
 
 def main():
-    # Load datasets
-    with open ('../data/fight_data_final.pkl', 'rb') as pklfile:
-        fight_data_final = pickle.load(pklfile)
-    with open ('../data/fight_card_final.pkl', 'rb') as pklfile:
-        fight_card_final = pickle.load(pklfile)
+    # Load fight card
+    fight_card_final = pd.read_csv('../data/fight_card_final.csv')
     df_fight_card = pd.read_excel('../data/fight_card.xlsx', sheet_name='Sheet1')
 
-    # Shallow Learning
-    # Prepare train & test datasets
+    # Load selected feature columns
+    with open('../data/selected_features.pkl', 'rb') as pklfile:
+        sel_features = pickle.load(pklfile)
 
-    fight_data_final.drop(columns=['fighter1','fighter2', 'winner'], inplace=True)
-    X = scale('standard', fight_data_final.iloc[:,:-1])
-    y = fight_data_final.iloc[:,-1]
-    X_test = scale('standard', fight_card_final)
+    X_test = fight_card_final[sel_features]
+    X_test = scale('standard', X_test)
 
-    lgb_params = {
-                 'n_estimators' : 500, 'boosting_type' : 'dart'
-                 }
+    # Load classifer from pre-svaed model
+    model = '../data/models/xgboost.pkl'
+    with open(model, 'rb') as pklfile:
+        classifier = pickle.load(pklfile)
 
-    lgbm = lgb.LGBMClassifier(**lgb_params)
-    lgbm.fit(X, y)
-
-    y_pred_lgbm = lgbm.predict(X_test)
+    # Predict
+    y_pred = classifier.predict(X_test)
+    
     preds = []
-
-    for idx, val in enumerate(y_pred_lgbm):
+    for idx, val in enumerate(y_pred):
         if (val == 0):
             preds.append(df_fight_card.fighter1[idx])
         else:

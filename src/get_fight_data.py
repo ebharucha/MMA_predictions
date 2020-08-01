@@ -63,7 +63,7 @@ def get_fighter_data(data_dir):
     draws = []
     fighter_urls = []
 
-    for c in list(string.ascii_lowercase):
+    for c in tqdm(list(string.ascii_lowercase)):
         fighters_url = f'http://ufcstats.com/statistics/fighters?char={c}&page=all'
         
         page = requests.get(fighters_url)
@@ -296,11 +296,12 @@ def main():
         'SLpM','Str_Acc','SApM','Str_Dep','TD_Avg','TD_Acc','TD_Def','Sub_Avg']
     fight_data_relevant_columns = ['fighter1', 'fighter2', 'weight_class', 'winner']
 
-    fighter_data = get_fighter_data(data_dir)
-    fighter_data_en = encode_fighter_data(data_dir, fighter_data[fighter_data_relevant_columns])
+    # fighter_data = get_fighter_data(data_dir)
+    # fighter_data_en = encode_fighter_data(data_dir, fighter_data[fighter_data_relevant_columns])
 
-    fight_data = get_fight_data(data_dir)
-
+    # fight_data = get_fight_data(data_dir)
+    fighter_data_en = pd.read_csv('../data/fighter_data_en.csv')
+    fight_data = pd.read_csv('../data/fight_data.csv')
     fight_data_relevant = fight_data[fight_data_relevant_columns]
     fight_data_final = prep_fight_data_final(data_dir, fighter_data_en, fight_data_relevant)
 ###############################################################################################
