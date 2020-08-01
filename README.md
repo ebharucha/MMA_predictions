@@ -16,7 +16,7 @@ Download the repo
 ## Step 2
 Create "fight_card.xlsx" in the data directory with the following structure<br>
 e.g.<br>
-weight_class	fighter1	fighter2<br>
+**weight_class	fighter1	fighter2**<br>
 Middleweight	Edmen Shahbazyan	Derek Brunson<br>
 Women's Flyweight	Jennifer Maia	Joanne Calderwood<br>
 Welterweight	Randy Brown	Vicente Luque<br>
@@ -28,7 +28,7 @@ Lightweight	Justin Gaethje	Khabib Nurmagomedov<br>
 Execute src/fight_predict.py
 
 
-**__Note:__**.
+**__Note:__**.<br>
 *If you want to get the latest fight data.*<br>
 *Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.*<br>
 *Execute src/get_fight_data.py*<br>
