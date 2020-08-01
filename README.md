@@ -28,8 +28,8 @@ Lightweight	Justin Gaethje	Khabib Nurmagomedov<br>
 Execute src/fight_predict.py
 
 
-**__Note:__**.<br>
-*If you want to get the latest fight data, execute ***"src/get_fight_data.py"**<br>
+**Note:**<br>
+If you want to get the latest fight data, execute ***"src/get_fight_data.py"**<br>
 *Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.*<br>
 <br>
 **@ebharucha**
