@@ -32,7 +32,9 @@ Execuete the following commands (without the quotes)<br>
 
 
 **Note:**<br>
-If you want to get the latest fight data, execute ***"src/get_fight_data.py"**<br>
-*Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.*<br>
+If you want to get the latest fight data, execute (without the quotes)<br>
+*"cd src"*<br>
+*"python get_fight_data.py"*<br>
+Will take a while to run, since it gathers the  entire dataset.  Have not tailored  to only update data since last collection.<br>
 <br>
 **@ebharucha**
