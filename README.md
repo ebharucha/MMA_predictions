@@ -27,8 +27,8 @@ Lightweight	Justin Gaethje	Khabib Nurmagomedov<br>
 
 ## Step 3
 Execuete the following commands (without the quotes)<br>
-"cd src"<br>
-"python src/fight_predict.py"<br>
+*"cd src"*<br>
+*"python fight_predict.py"*<br>
 
 
 **Note:**<br>
