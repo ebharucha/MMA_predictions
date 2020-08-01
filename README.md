@@ -1,12 +1,13 @@
 # MMA_predictions
-Using basic supervised learning to predict fight outcomes
+Using basic supervised learning to predict fight outcomes.
 
-The current dataset is restricted to the UFC
+The current dataset is restricted to the UFC.
 
-Have not fine tuned any of the models.
-The Deep Learning models are WIP & not operational
+The current model is based on gradient boosting.  The Deep Learning models are WIP & not operational
 
 The overall proecss of acquiring data and running the models needs to be automated.  
+
+I also plan to introduce a basic web interface.
 
 **To run:**
 
